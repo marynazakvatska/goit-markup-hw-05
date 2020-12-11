@@ -396,14 +396,11 @@ body {
   position: relative;
 }
 
-.desktop {
-  position: absolute;
-  display: flex;
+.work-text {
+  display: inline-block;
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  bottom: 0;
-  right: 0;
   text-align: center;
   justify-content: center;
   font-weight: 700;
@@ -412,6 +409,14 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
+}
+
+.work-text-overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right: 0;
   margin: 0;
 }
 
