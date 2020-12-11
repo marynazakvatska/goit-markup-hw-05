@@ -146,6 +146,12 @@ body {
   opacity: 1;
 }
 
+.flex-element:hover,
+.flex-element:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -385,14 +391,14 @@ body {
   margin-right: 30px;
 }
 
-.work-thumb {
-  display: block;
+.work-element {
+  display: flex;
   position: relative;
 }
 
-.work-thumb::before {
+.desktop {
   position: absolute;
-  display: block;
+  display: flex;
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -402,26 +408,15 @@ body {
   justify-content: center;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.17px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0;
 }
 
 .picture-work {
   display: block;
-}
-
-.pic-nout.work-thumb::before {
-  content: "Десктопные приложения";
-}
-
-.pic-tel.work-thumb::before {
-  content: "Мобильные приложения";
-}
-
-.pic-laptop.work-thumb::before {
-  content: "Дизайнерские решения";
 }
 
 .team-name {
@@ -570,6 +565,7 @@ body {
   line-height: 1.71;
   color: var(--address-contacts-color);
   font-style: normal;
+  text-decoration: none;
 }
 
 .mail {
